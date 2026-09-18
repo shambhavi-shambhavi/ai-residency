@@ -17,4 +17,13 @@
 - **"What I built**":
 -     Ran experiments in Claude on prediction confidence, tokenization, and the context window.
 - -**"Questions I still have**":
+-
+
+## Day 5 — 2026-09-18
+
+- "**What I learned**":
+-     Reaching for an LLM by default is a trap — the better habit is to check fit first: is the input actually language/fuzzy, can the task tolerate a non-deterministic answer, does a simpler tool (regex, SQL, rules engine, classic ML) already solve it, and what's the cost if it's wrong. The best real systems are usually hybrids — LLM for the fuzzy edges (understanding messy input, generating natural language), deterministic code for the exact parts (math, validation, business rules) — not an all-or-nothing choice.
+- **"What I built**":
+-     Wrote `notes/ai-fit-checklist.md`, a reusable "Is AI the right tool?" checklist (the 4 fit questions, a sweet-spot-vs-wrong-tool reference table, and the hybrid-systems principle). Added an "AI Fit Assessment" prompt template to `prompts/prompt-library.md` that takes a described use case, runs it through the 4 questions, and recommends LLM / classic ML / simple code / hybrid / no AI plus risks — without defaulting to "use an LLM."
+- **"Questions I still have**":
 - 
