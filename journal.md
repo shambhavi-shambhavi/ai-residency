@@ -26,4 +26,13 @@
 - **"What I built**":
 -     Wrote `notes/ai-fit-checklist.md`, a reusable "Is AI the right tool?" checklist (the 4 fit questions, a sweet-spot-vs-wrong-tool reference table, and the hybrid-systems principle). Added an "AI Fit Assessment" prompt template to `prompts/prompt-library.md` that takes a described use case, runs it through the 4 questions, and recommends LLM / classic ML / simple code / hybrid / no AI plus risks — without defaulting to "use an LLM."
 - **"Questions I still have**":
+-
+
+## Day 6 — 2026-09-19
+
+- "**What I learned**":
+-     The "1 token ≈ 4 characters" rule of thumb is a quick way to sanity-check cost and length before ever calling a model — it's rough, but good enough for back-of-envelope estimates. Practiced ceiling division (rounding up without extra imports) and dictionary + for-loop basics for looking up per-model rates.
+- **"What I built**":
+-     Wrote `projects/token_estimator.py`, a small heavily-commented Python script for a beginner: an `estimate_tokens(text)` function (char count ÷ 4, rounded up), a dictionary of illustrative example prices for two made-up models, and a sample paragraph whose estimated token count and per-model cost get printed via a for loop.
+- **"Questions I still have**":
 - 
